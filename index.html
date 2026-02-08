@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BELMO & TARIQ | اتحاد الذكاء الاصطناعي والتصميم الجرافيكي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo"> 
+                <span class="logo-part">O</span>
+                <span class="logo-part">M</span>
+                <span class="logo-part">L</span>
+                <span class="logo-part">E</span>
+                <span class="logo-part">B</span>
+                <span class="logo-part">&</span>
+                <span class="logo-part">Q</span>
+                <span class="logo-part">I</span>
+                <span class="logo-part">R</span>
+                <span class="logo-part">A</span>
+                <span class="logo-part">T</span>
+            </div>
+            <div class="preloader-progress">
+                <div class="progress-bar"></div>
+                <div class="progress-text">0%</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Floating Elements -->
+    <div class="floating-shapes">
+        <div class="floating-shape shape-1"><i class="fas fa-robot"></i></div>
+        <div class="floating-shape shape-2"><i class="fas fa-palette"></i></div>
+        <div class="floating-shape shape-3"><i class="fas fa-code"></i></div>
+        <div class="floating-shape shape-4"><i class="fas fa-brain"></i></div>
+        <div class="floating-shape shape-5"><i class="fas fa-object-group"></i></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-wrapper">
+                <div class="main-logo">
+                    <div class="logo-icon-animated">
+                        <div class="logo-icon-inner">
+                            <i class="fas fa-infinity"></i>
+                        </div>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-name">TARIQ</span>
+                        <span class="logo-ampersand">&</span>
+                        <span class="logo-name">BELMO</span>
+                    </div>
+                </div>
+                <div class="logo-subtitle">دمج الذكاء والجمال</div>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#hero" class="nav-link active" data-nav="home">
+                        <i class="fas fa-home nav-icon"></i>
+                        <span class="nav-text">الرئيسية</span>
+                    </a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link" data-nav="about">
+                        <i class="fas fa-users nav-icon"></i>
+                        <span class="nav-text">من نحن</span>
+                    </a></li>
+                    <li class="nav-item"><a href="#expertise" class="nav-link" data-nav="expertise">
+                        <i class="fas fa-star nav-icon"></i>
+                        <span class="nav-text">خبراتنا</span>
+                    </a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link" data-nav="projects">
+                        <i class="fas fa-briefcase nav-icon"></i>
+                        <span class="nav-text">مشاريعنا</span>
+                    </a></li>
+                    <li class="nav-item"><a href="#process" class="nav-link" data-nav="process">
+                        <i class="fas fa-cogs nav-icon"></i>
+                        <span class="nav-text">عملنا</span>
+                    </a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link" data-nav="contact">
+                        <i class="fas fa-envelope nav-icon"></i>
+                        <span class="nav-text">اتصل بنا</span>
+                    </a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle">
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-nav" id="mobileNav">
+            <div class="mobile-nav-header">
+                <div class="mobile-logo">BELMO & TARIQ</div>
+                <button class="mobile-close" id="mobileClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <ul class="mobile-nav-list">
+                <li><a href="#hero" class="mobile-nav-link active">الرئيسية</a></li>
+                <li><a href="#about" class="mobile-nav-link">من نحن</a></li>
+                <li><a href="#expertise" class="mobile-nav-link">خبراتنا</a></li>
+                <li><a href="#projects" class="mobile-nav-link">مشاريعنا</a></li>
+                <li><a href="#process" class="mobile-nav-link">عملنا</a></li>
+                <li><a href="#contact" class="mobile-nav-link">اتصل بنا</a></li>
+            </ul>
+            <div class="mobile-nav-footer">
+                <div class="mobile-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">شركة ناشئة متخصصة</div>
+                <h1 class="hero-title">
+                    <span class="title-line">نحو مستقبل</span>
+                    <span class="title-line">رقمي متفرد</span>
+                </h1>
+                <p class="hero-description">
+                    <span class="highlight-text">محمد بلال زقايبة (BELMO)</span> في الذكاء الاصطناعي وتطوير الويب، و 
+                    <span class="highlight-text">طارق ناصر حزيمية</span> في التصميم الجرافيكي والإبداعي. معًا نخلق تجارب رقمية استثنائية.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">مشروع مكتمل</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="100">0</div>
+                        <div class="stat-label">عميل راضٍ</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-label">جائزة وتكريم</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="2">0</div>
+                        <div class="stat-label">خبير متخصص</div>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary btn-large">
+                        <span>استكشاف المشاريع</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline btn-large">
+                        <span>تواصل معنا الآن</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-container">
+                    <div class="code-terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="terminal-title">VS Code - belmo.js</div>
+                        </div>
+                        <div class="terminal-body">
+                            <pre><code class="javascript">// BELMO: خبير الذكاء الاصطناعي
+const aiExpertise = {
+  languages: ["JavaScript", "Python", "Java", "C++"],
+  frameworks: ["TensorFlow", "PyTorch", "React", "Node.js"],
+  tools: ["VS Code", "Git", "Docker", "AWS"],
+  specializations: [
+    "Machine Learning",
+    "Neural Networks",
+    "Web Development",
+    "Data Science"
+  ]
+};
+
+// TARIQ: خبير التصميم الجرافيكي
+const designExpertise = {
+  software: ["Photoshop", "Illustrator", "Figma", "After Effects"],
+  skills: ["UI/UX Design", "Branding", "Motion Graphics", "3D Modeling"],
+  principles: ["Typography", "Color Theory", "Composition", "Visual Hierarchy"]
+};
+
+// دمج الخبرات لخلق تجارب استثنائية
+const createDigitalExperience = (ai, design) => {
+  return {
+    innovativeSolutions: true,
+    aestheticDesign: true,
+    userCentric: true,
+    cuttingEdgeTech: true,
+    result: "تميز غير مسبوق"
+  };
+};</code></pre>
+                        </div>
+                    </div>
+                    <div class="design-canvas">
+                        <div class="canvas-header">
+                            <div class="canvas-tools">
+                                <i class="fas fa-pencil-alt"></i>
+                                <i class="fas fa-fill-drip"></i>
+                                <i class="fas fa-sliders-h"></i>
+                            </div>
+                            <div class="canvas-title">Figma - tariq.fig</div>
+                        </div>
+                        <div class="canvas-body">
+                            <div class="design-element de-1"></div>
+                            <div class="design-element de-2"></div>
+                            <div class="design-element de-3"></div>
+                            <div class="design-element de-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <div class="scroll-text">قم بالتمرير لاكتشاف المزيد</div>
+            <div class="scroll-icon">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="section-header">
+            <div class="section-badge">تعرف علينا</div>
+            <h2 class="section-title">العقول المبدعة وراء التميز</h2>
+            <p class="section-description">فريق من خبيرين متخصصين يجمع بين العمق التقني والجمال البصري لخلق حلول رقمية غير عادية.</p>
+        </div>
+
+        <div class="about-container">
+            <div class="about-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="belmo">BELMO</button>
+                    <button class="tab-button" data-tab="tariq">TARIQ</button>
+                    <button class="tab-button" data-tab="team">الفريق</button>
+                    <button class="tab-button" data-tab="philosophy">فلسفتنا</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab-belmo">
+                        <div class="team-member-detail">
+                            <div class="member-header">
+                                <div class="member-avatar">
+                                    <div class="avatar-image ai-avatar">
+                                        <i class="fas fa-brain"></i>
+                                    </div>
+                                    <div class="avatar-status"></div>
+                                </div>
+                                <div class="member-info">
+                                    <h3 class="member-name">محمد بلال زقايبة <span class="member-alias">(BELMO)</span></h3>
+                                    <div class="member-title">خبير الذكاء الاصطناعي وتطوير الويب</div>
+                                    <div class="member-tags">
+                                        <span class="member-tag">VS Code Expert</span>
+                                        <span class="member-tag">JavaScript Guru</span>
+                                        <span class="member-tag">AI Specialist</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member-content">
+                                <p class="member-bio">
+                                    طالب ذكاء اصطناعي متخصص في تطوير حلول تقنية متقدمة. أمتلك معرفة عميقة في JavaScript, HTML5, CSS3, JSON وتقنيات الويب الحديثة. أعمل على VS Code وأطور أنظمة ذكية وتطبيقات ويب معقدة. خبرتي تشمل تصميم خوارزميات التعلم الآلي، تطوير واجهات برمجة التطبيقات، وإنشاء تطبيقات ويب تفاعلية متكاملة.
+                                </p>
+                                <div class="member-expertise">
+                                    <h4>المهارات التقنية المتقدمة</h4>
+                                    <div class="expertise-grid">
+                                        <div class="expertise-category">
+                                            <h5>لغات البرمجة</h5>
+                                            <ul class="expertise-list">
+                                                <li>JavaScript (ES6+)</li>
+                                                <li>Python</li>
+                                                <li>TypeScript</li>
+                                                <li>Java</li>
+                                                <li>C++</li>
+                                            </ul>
+                                        </div>
+                                        <div class="expertise-category">
+                                            <h5>أطر العمل والمكتبات</h5>
+                                            <ul class="expertise-list">
+                                                <li>React & Redux</li>
+                                                <li>Node.js & Express</li>
+                                                <li>TensorFlow.js</li>
+                                                <li>Vue.js</li>
+                                                <li>Angular</li>
+                                            </ul>
+                                        </div>
+                                        <div class="expertise-category">
+                                            <h5>قواعد البيانات</h5>
+                                            <ul class="expertise-list">
+                                                <li>MongoDB</li>
+                                                <li>MySQL</li>
+                                                <li>Firebase</li>
+                                                <li>PostgreSQL</li>
+                                                <li>Redis</li>
+                                            </ul>
+                                        </div>
+                                        <div class="expertise-category">
+                                            <h5>أدوات التطوير</h5>
+                                            <ul class="expertise-list">
+                                                <li>VS Code</li>
+                                                <li>Git & GitHub</li>
+                                                <li>Docker</li>
+                                                <li>Webpack</li>
+                                                <li>AWS</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-tariq">
+                        <div class="team-member-detail">
+                            <div class="member-header">
+                                <div class="member-avatar">
+                                    <div class="avatar-image design-avatar">
+                                        <i class="fas fa-palette"></i>
+                                    </div>
+                                    <div class="avatar-status"></div>
+                                </div>
+                                <div class="member-info">
+                                    <h3 class="member-name">طارق ناصر حزيمية</h3>
+                                    <div class="member-title">مصمم جرافيكي وإبداعي محترف</div>
+                                    <div class="member-tags">
+                                        <span class="member-tag">UI/UX Expert</span>
+                                        <span class="member-tag">Branding Specialist</span>
+                                        <span class="member-tag">Visual Artist</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member-content">
+                                <p class="member-bio">
+                                    مصمم جرافيكي مبدع متخصص في إنشاء هويات بصرية مميزة وتصميم تجارب مستخدم استثنائية. أمتلك مهارات متقدمة في برامج التصميم الرائدة وأقوم بتحويل المفاهيم المجردة إلى واقع مرئي جذاب. خبرتي تشمل تصميم الشعارات، الهويات البصرية المتكاملة، واجهات المستخدم، والمواد التسويقية الإبداعية.
+                                </p>
+                                <div class="member-expertise">
+                                    <h4>المهارات الإبداعية المتخصصة</h4>
+                                    <div class="expertise-grid">
+                                        <div class="expertise-category">
+                                            <h5>برامج التصميم</h5>
+                                            <ul class="expertise-list">
+                                                <li>Adobe Photoshop</li>
+                                                <li>Adobe Illustrator</li>
+                                                <li>Figma</li>
+                                                <li>Adobe After Effects</li>
+                                                <li>Blender</li>
+                                            </ul>
+                                        </div>
+                                        <div class="expertise-category">
+                                            <h5>مجالات التصميم</h5>
+                                            <ul class="expertise-list">
+                                                <li>UI/UX Design</li>
+                                                <li>Brand Identity</li>
+                                                <li>Motion Graphics</li>
+                                                <li>3D Modeling</li>
+                                                <li>Typography</li>
+                                            </ul>
+                                        </div>
+                                        <div class="expertise-category">
+                                            <h5>مبادئ التصميم</h5>
+                                            <ul class="expertise-list">
+                                                <li>Color Theory</li>
+                                                <li>Visual Hierarchy</li>
+                                                <li>Composition</li>
+                                                <li>User Psychology</li>
+                                                <li>Aesthetics</li>
+                                            </ul>
+                                        </div>
+                                        <div class="expertise-category">
+                                            <h5>التقنيات الحديثة</h5>
+                                            <ul class="expertise-list">
+                                                <li>Responsive Design</li>
+                                                <li>Prototyping</li>
+                                                <li>Design Systems</li>
+                                                <li>AR/VR Design</li>
+                                                <li>Microinteractions</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-team">
+                        <div class="team-synergy">
+                            <h3>التآزر الفريد بين الخبرات</h3>
+                            <p class="synergy-description">
+                                عندما يجتمع ذكاء BELMO التقني مع إبداع TARIQ البصري، ينتج عنه اتحاد قوي قادر على خلق حلول رقمية غير مسبوقة. نحن نؤمن بأن التكنولوجيا والجمال يجب أن يسيرا جنبًا إلى جنب لخلق تجارب رقمية استثنائية.
+                            </p>
+                            <div class="synergy-visual">
+                                <div class="synergy-circle">
+                                    <div class="circle-part ai-part">
+                                        <div class="part-icon">
+                                            <i class="fas fa-robot"></i>
+                                        </div>
+                                        <div class="part-label">الذكاء الاصطناعي</div>
+                                    </div>
+                                    <div class="circle-part design-part">
+                                        <div class="part-icon">
+                                            <i class="fas fa-paint-brush"></i>
+                                        </div>
+                                        <div class="part-label">التصميم الجرافيكي</div>
+                                    </div>
+                                    <div class="circle-center">
+                                        <div class="center-icon">
+                                            <i class="fas fa-sync-alt"></i>
+                                        </div>
+                                        <div class="center-text">التكامل</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="synergy-benefits">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <i class="fas fa-bolt"></i>
+                                    </div>
+                                    <h4>سرعة التنفيذ</h4>
+                                    <p>دمج الخبرات يقلل الوقت بين الفكرة والتنفيذ</p>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <i class="fas fa-gem"></i>
+                                    </div>
+                                    <h4>جودة استثنائية</h4>
+                                    <p>كل مشروع يحصل على العناية التقنية والجمالية</p>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">
+                                        <i class="fas fa-lightbulb"></i>
+                                    </div>
+                                    <h4>إبداع متفرد</h4>
+                                    <p>الدمج بين التقنية والجمال يولد أفكارًا مبتكرة</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-philosophy">
+                        <div class="philosophy-content">
+                            <h3>فلسفتنا في العمل</h3>
+                            <p class="philosophy-intro">
+                                نؤمن بأن الحلول الرقمية الناجحة يجب أن تجمع بين ثلاثية: التقنية المتقدمة، الجمال البصري، والتجربة الإنسانية. هذا هو أساس كل ما نقوم به.
+                            </p>
+                            <div class="philosophy-principles">
+                                <div class="principle">
+                                    <div class="principle-number">01</div>
+                                    <h4>التميز التقني</h4>
+                                    <p>نستخدم أحدث التقنيات وأفضل الممارسات في التطوير لضمان أداء وقوة الحلول التي نقدمها.</p>
+                                </div>
+                                <div class="principle">
+                                    <div class="principle-number">02</div>
+                                    <h4>الجمال الوظيفي</h4>
+                                    <p>نصمم واجهات جميلة ولكنها في نفس الوقت سهلة الاستخدام وتركز على تجربة المستخدم.</p>
+                                </div>
+                                <div class="principle">
+                                    <div class="principle-number">03</div>
+                                    <h4>الابتكار المستمر</h4>
+                                    <p>نحن في حالة تطور دائم، نتعلم التقنيات الجديدة ونطبقها في مشاريعنا.</p>
+                                </div>
+                                <div class="principle">
+                                    <div class="principle-number">04</div>
+                                    <h4>الشراكة الحقيقية</h4>
+                                    <p>نعمل مع عملائنا كشركاء، نفهم احتياجاتهم ونشاركهم في رحلة تطوير الحل.</p>
+                                </div>
+                            </div>
+                            <div class="philosophy-quote">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-right"></i>
+                                </div>
+                                <p class="quote-text">
+                                    "التقنية بدون جمال تكون باردة، والجمال بدون تقنية يكون أجوف. عندما يلتقيان، يولد التميز."
+                                </p>
+                                <div class="quote-author">- BELMO & TARIQ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="expertise-section" id="expertise">
+        <div class="section-header">
+            <div class="section-badge">قوتنا</div>
+            <h2 class="section-title">خبراتنا المتخصصة</h2>
+            <p class="section-description">مجموعة من المهارات المتقدمة والتقنيات الحديثة التي تجعلنا مختلفين</p>
+        </div>
+
+        <div class="expertise-container">
+            <div class="expertise-tabs">
+                <div class="expertise-tab-header">
+                    <div class="tab-header-item active" data-tab="ai">الذكاء الاصطناعي</div>
+                    <div class="tab-header-item" data-tab="web">تطوير الويب</div>
+                    <div class="tab-header-item" data-tab="design">التصميم الجرافيكي</div>
+                    <div class="tab-header-item" data-tab="tools">الأدوات والتقنيات</div>
+                </div>
+                <div class="expertise-tab-content">
+                    <div class="tab-content-pane active" id="ai-tab">
+                        <div class="expertise-details">
+                            <div class="expertise-visual">
+                                <div class="neural-network">
+                                    <div class="neuron-layer input-layer">
+                                        <div class="neuron"><span>Input</span></div>
+                                        <div class="neuron"><span>Data</span></div>
+                                        <div class="neuron"><span>Processing</span></div>
+                                    </div>
+                                    <div class="neuron-layer hidden-layer">
+                                        <div class="neuron"><span>ML</span></div>
+                                        <div class="neuron"><span>AI</span></div>
+                                        <div class="neuron"><span>DL</span></div>
+                                        <div class="neuron"><span>NN</span></div>
+                                    </div>
+                                    <div class="neuron-layer output-layer">
+                                        <div class="neuron"><span>Result</span></div>
+                                    </div>
+                                    <div class="neural-connections"></div>
+                                </div>
+                            </div>
+                            <div class="expertise-info">
+                                <h3>خبرات الذكاء الاصطناعي المتقدمة</h3>
+                                <p>نطور حلول ذكاء اصطناعي متقدمة باستخدام أحدث التقنيات والخوارزميات:</p>
+                                <ul class="expertise-features">
+                                    <li><i class="fas fa-check-circle"></i> تطوير نماذج تعلم آلي متقدمة</li>
+                                    <li><i class="fas fa-check-circle"></i> معالجة اللغات الطبيعية (NLP)</li>
+                                    <li><i class="fas fa-check-circle"></i> رؤية حاسوبية وتحليل الصور</li>
+                                    <li><i class="fas fa-check-circle"></i> أنظمة توصية ذكية</li>
+                                    <li><i class="fas fa-check-circle"></i> تحليل البيانات الضخمة</li>
+                                    <li><i class="fas fa-check-circle"></i> تطوير خوارزميات متخصصة</li>
+                                </ul>
+                                <div class="expertise-level">
+                                    <div class="level-item">
+                                        <div class="level-label">Python</div>
+                                        <div class="level-bar">
+                                            <div class="level-progress" style="width: 95%"></div>
+                                        </div>
+                                        <div class="level-value">95%</div>
+                                    </div>
+                                    <div class="level-item">
+                                        <div class="level-label">TensorFlow</div>
+                                        <div class="level-bar">
+                                            <div class="level-progress" style="width: 90%"></div>
+                                        </div>
+                                        <div class="level-value">90%</div>
+                                    </div>
+                                    <div class="level-item">
+                                        <div class="level-label">Machine Learning</div>
+                                        <div class="level-bar">
+                                            <div class="level-progress" style="width: 92%"></div>
+                                        </div>
+                                        <div class="level-value">92%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content-pane" id="web-tab">
+                        <div class="expertise-details">
+                            <div class="expertise-visual">
+                                <div class="code-stack">
+                                    <div class="stack-layer">
+                                        <div class="layer-name">HTML5</div>
+                                        <div class="layer-progress" style="width: 98%"></div>
+                                    </div>
+                                    <div class="stack-layer">
+                                        <div class="layer-name">CSS3</div>
+                                        <div class="layer-progress" style="width: 96%"></div>
+                                    </div>
+                                    <div class="stack-layer">
+                                        <div class="layer-name">JavaScript</div>
+                                        <div class="layer-progress" style="width: 97%"></div>
+                                    </div>
+                                    <div class="stack-layer">
+                                        <div class="layer-name">React</div>
+                                        <div class="layer-progress" style="width: 93%"></div>
+                                    </div>
+                                    <div class="stack-layer">
+                                        <div class="layer-name">Node.js</div>
+                                        <div class="layer-progress" style="width: 91%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="expertise-info">
+                                <h3>تطوير الويب المتقدم</h3>
+                                <p>نطور تطبيقات ويب حديثة وسريعة الاستجابة باستخدام أحدث التقنيات:</p>
+                                <ul class="expertise-features">
+                                    <li><i class="fas fa-check-circle"></i> تطوير واجهات مستخدم تفاعلية</li>
+                                    <li><i class="fas fa-check-circle"></i> تطوير واجهات برمجة تطبيقات (APIs)</li>
+                                    <li><i class="fas fa-check-circle"></i> تطبيقات صفحة واحدة (SPA)</li>
+                                    <li><i class="fas fa-check-circle"></i> مواقع ويب سريعة الاستجابة</li>
+                                    <li><i class="fas fa-check-circle"></i> تحسين محركات البحث (SEO)</li>
+                                    <li><i class="fas fa-check-circle"></i> تطوير متاجر إلكترونية متكاملة</li>
+                                </ul>
+                                <div class="expertise-level">
+                                    <div class="level-item">
+                                        <div class="level-label">JavaScript</div>
+                                        <div class="level-bar">
+                                            <div class="level-progress" style="width: 97%"></div>
+                                        </div>
+                                        <div class="level-value">97%</div>
+                                    </div>
+                                    <div class="level-item">
+                                        <div class="level-label">React</div>
+                                        <div class="level-bar">
+                                            <div class="level-progress" style="width: 93%"></div>
+                                        </div>
+                                        <div class="level-value">93%</div>
+                                    </div>
+                                    <div class="level-item">
+                                        <div class="level-label">Node.js</div>
+                                        <div class="level-bar">
+                                            <div class="level-progress" style="width: 91%"></div>
+                                        </div>
+                                        <div class="level-value">91%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content-pane" id="design-tab">
+                        <div class="expertise-details">
+                            <div class="expertise-visual">
+                                <div class="color-palette">
+                                    <div class="palette-color" style="background-color: #0a192f;"></div>
+                                    <div class="palette-color" style="background-color: #64ffda;"></div>
+                                    <div class="palette-color" style="background-color: #112240;"></div>
+                                    <div class="palette-color" style="background-color: #ccd6f6;"></div>
+                                    <div class="palette-color" style="background-color: #ff6b6b;"></div>
+                                </div>
+                                <div class="design-elements">
+                                    <div class="element-circle"></div>
+                                    <div class="element-square"></div>
+                                    <div class="element-triangle"></div>
+                                </div>
+                            </div>
+                            <div class="expertise-info">
+                                <h3>التصميم الجرافيكي والإبداعي</h3>
+                                <p>نصمم هويات بصرية مميزة وتجارب مستخدم استثنائية:</p>
+                                <ul class="expertise-features">
+                                    <li><i class="fas fa-check-circle"></i> تصميم هوية بصرية متكاملة</li>
+                                    <li><i class="fas fa-check-circle"></i> تصميم واجهات مستخدم (UI)</li>
+                                    <li><i class="fas fa-check-circle"></i> تصميم تجربة مستخدم (UX)</li>
+                                    <li><i class="fas fa-check-circle"></i> تصميم شعارات مميزة</li>
+                                    <li><i class="fas fa-check-circle"></i> تصميم مواد تسويقية إبداعية</li>
+                                    <li><i class="fas fa-check-circle"></i> رسوم متحركة وتصميم حركي</li>
+                                </ul>
+                                <div class="expertise-level">
+                                    <div class="level-item">
+                                        <div class="level-label">UI/UX Design</div>
+                                        <div class="level-bar">
+                                            <div class="level-progress" style="width: 94%"></div>
+                                        </div>
+                                        <div class="level-value">94%</div>
+                                    </div>
+                                    <div class="level-item">
+                                        <div class="level-label">Adobe Creative Suite</div>
+                                        <div class="level-bar">
+                                            <div class="level-progress" style="width: 96%"></div>
+                                        </div>
+                                        <div class="level-value">96%</div>
+                                    </div>
+                                    <div class="level-item">
+                                        <div class="level-label">Brand Identity</div>
+                                        <div class="level-bar">
+                                            <div class="level-progress" style="width: 95%"></div>
+                                        </div>
+                                        <div class="level-value">95%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content-pane" id="tools-tab">
+                        <div class="expertise-details">
+                            <div class="expertise-visual">
+                                <div class="tools-grid">
+                                    <div class="tool-item">
+                                        <i class="fab fa-js-square"></i>
+                                        <span>JavaScript</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i class="fab fa-python"></i>
+                                        <span>Python</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i class="fab fa-react"></i>
+                                        <span>React</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i class="fab fa-node-js"></i>
+                                        <span>Node.js</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i class="fab fa-figma"></i>
+                                        <span>Figma</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i class="fas fa-code"></i>
+                                        <span>VS Code</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i class="fab fa-git-alt"></i>
+                                        <span>Git</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i class="fab fa-docker"></i>
+                                        <span>Docker</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="expertise-info">
+                                <h3>الأدوات والتقنيات الحديثة</h3>
+                                <p>نستخدم مجموعة متطورة من الأدوات والتقنيات لضمان جودة وكفاءة العمل:</p>
+                                <ul class="expertise-features">
+                                    <li><i class="fas fa-check-circle"></i> VS Code مع إضافات متقدمة</li>
+                                    <li><i class="fas fa-check-circle"></i> أنظمة التحكم بالإصدار (Git)</li>
+                                    <li><i class="fas fa-check-circle"></i> حاويات التطوير (Docker)</li>
+                                    <li><i class="fas fa-check-circle"></i> أنظمة التكامل المستمر (CI/CD)</li>
+                                    <li><i class="fas fa-check-circle"></i> أدوات تحسين الأداء</li>
+                                    <li><i class="fas fa-check-circle"></i> منصات النشر السحابي</li>
+                                </ul>
+                                <div class="expertise-level">
+                                    <div class="level-item">
+                                        <div class="level-label">VS Code</div>
+                                        <div class="level-bar">
+                                            <div class="level-progress" style="width: 99%"></div>
+                                        </div>
+                                        <div class="level-value">99%</div>
+                                    </div>
+                                    <div class="level-item">
+                                        <div class="level-label">Git & GitHub</div>
+                                        <div class="level-bar">
+                                            <div class="level-progress" style="width: 96%"></div>
+                                        </div>
+                                        <div class="level-value">96%</div>
+                                    </div>
+                                    <div class="level-item">
+                                        <div class="level-label">Docker</div>
+                                        <div class="level-bar">
+                                            <div class="level-progress" style="width: 88%"></div>
+                                        </div>
+                                        <div class="level-value">88%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="expertise-showcase">
+                <h3>مشاريعنا المتخصصة</h3>
+                <div class="showcase-container">
+                    <div class="showcase-item">
+                        <div class="showcase-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>نظام توصيات ذكي</h4>
+                        <p>نظام ذكاء اصطناعي لتوصية المنتجات بناءً على سلوك المستخدم</p>
+                    </div>
+                    <div class="showcase-item">
+                        <div class="showcase-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h4>متجر إلكتروني متقدم</h4>
+                        <p>متجر إلكتروني سريع الاستجابة مع إدارة محتوى متكاملة</p>
+                    </div>
+                    <div class="showcase-item">
+                        <div class="showcase-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>لوحة تحليل بيانات</h4>
+                        <p>لوحة تحكم تفاعلية لتحليل البيانات وعرض الإحصائيات</p>
+                    </div>
+                    <div class="showcase-item">
+                        <div class="showcase-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4>تطبيق ويب تقدمي</h4>
+                        <p>تطبيق ويب متقدم يعمل دون اتصال مع إشعارات فورية</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="section-header">
+            <div class="section-badge">إنجازاتنا</div>
+            <h2 class="section-title">معرض المشاريع المتميزة</h2>
+            <p class="section-description">مجموعة مختارة من المشاريع التي تظهر قدراتنا الفنية والإبداعية</p>
+        </div>
+
+        <div class="projects-container">
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="ai">ذكاء اصطناعي</button>
+                <button class="filter-btn" data-filter="web">تطوير الويب</button>
+                <button class="filter-btn" data-filter="design">تصميم</button>
+                <button class="filter-btn" data-filter="ecommerce">متاجر إلكترونية</button>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+                <!-- سيتم تعبئة المشاريع باستخدام JavaScript -->
+            </div>
+
+            <div class="projects-loading" id="projectsLoading">
+                <div class="loading-spinner">
+                    <div class="spinner-circle"></div>
+                </div>
+                <div class="loading-text">جاري تحميل المشاريع...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section" id="process">
+        <div class="section-header">
+            <div class="section-badge">طريقتنا</div>
+            <h2 class="section-title">كيف نعمل معًا</h2>
+            <p class="section-description">عملية منظمة تجمع بين التخطيط التقني والإبداع البصري</p>
+        </div>
+
+        <div class="process-container">
+            <div class="process-timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-item">
+                    <div class="timeline-number">01</div>
+                    <div class="timeline-content">
+                        <h3>الاكتشاف والتخطيط</h3>
+                        <p>نفهم احتياجاتك وأهدافك ونضع خطة عمل شاملة تجمع بين الجوانب التقنية والتصميمية.</p>
+                        <div class="timeline-tools">
+                            <span class="tool-tag">اجتماعات</span>
+                            <span class="tool-tag">تحليل</span>
+                            <span class="tool-tag">تخطيط</span>
+                        </div>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">02</div>
+                    <div class="timeline-content">
+                        <h3>التصميم والمفاهيم</h3>
+                        <p>نصمم نماذج أولية وواجهات مستخدم مع التركيز على التجربة البصرية وسهولة الاستخدام.</p>
+                        <div class="timeline-tools">
+                            <span class="tool-tag">Figma</span>
+                            <span class="tool-tag">Wireframes</span>
+                            <span class="tool-tag">Prototypes</span>
+                        </div>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">03</div>
+                    <div class="timeline-content">
+                        <h3>التطوير والبرمجة</h3>
+                        <p>نحول التصاميم إلى كود فعّال باستخدام أحدث تقنيات JavaScript وHTML وCSS.</p>
+                        <div class="timeline-tools">
+                            <span class="tool-tag">VS Code</span>
+                            <span class="tool-tag">JavaScript</span>
+                            <span class="tool-tag">React</span>
+                        </div>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">04</div>
+                    <div class="timeline-content">
+                        <h3>الدمج والاختبار</h3>
+                        <p>نختبر التطبيق بدقة ونتأكد من عمله بكفاءة على جميع الأجهزة والمتصفحات.</p>
+                        <div class="timeline-tools">
+                            <span class="tool-tag">Testing</span>
+                            <span class="tool-tag">Debugging</span>
+                            <span class="tool-tag">Optimization</span>
+                        </div>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">05</div>
+                    <div class="timeline-content">
+                        <h3>النشر والدعم</h3>
+                        <p>ننشر التطبيق على السيرفرات ونوفر الدعم الفني والتحسينات المستمرة.</p>
+                        <div class="timeline-tools">
+                            <span class="tool-tag">Deployment</span>
+                            <span class="tool-tag">Hosting</span>
+                            <span class="tool-tag">Support</span>
+                        </div>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-collaboration">
+                <h3>التعاون بين BELMO و TARIQ</h3>
+                <p>يعمل خبير الذكاء الاصطناعي وخبير التصميم الجرافيكي معًا في كل مرحلة لضمان التكامل الكامل بين الشكل والوظيفة.</p>
+                <div class="collaboration-visual">
+                    <div class="collab-flow">
+                        <div class="flow-step">
+                            <div class="flow-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="flow-text">فكرة</div>
+                        </div>
+                        <div class="flow-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="flow-step">
+                            <div class="flow-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="flow-text">تصميم</div>
+                        </div>
+                        <div class="flow-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="flow-step">
+                            <div class="flow-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="flow-text">تطوير</div>
+                        </div>
+                        <div class="flow-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="flow-step">
+                            <div class="flow-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="flow-text">إطلاق</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="section-header">
+            <div class="section-badge">تواصل معنا</div>
+            <h2 class="section-title">لنبدأ مشروعك معًا</h2>
+            <p class="section-description">نحن مستعدون لتحويل أفكارك إلى واقع رقمي مذهل</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-card-header">
+                        <div class="contact-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="contact-person">
+                            <h4>محمد بلال زقايبة (BELMO)</h4>
+                            <p>خبير الذكاء الاصطناعي وتطوير الويب</p>
+                        </div>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <span>belmo@example.com</span>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-phone"></i>
+                            <span>+962 79 000 0001</span>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>الأردن</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-card-header">
+                        <div class="contact-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="contact-person">
+                            <h4>طارق ناصر حزيمية</h4>
+                            <p>خبير التصميم الجرافيكي والإبداعي</p>
+                        </div>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <span>tariq@example.com</span>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-phone"></i>
+                            <span>+962 79 000 0002</span>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>الأردن</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-social">
+                    <h4>تابعنا على</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <div class="form-header">
+                    <h3>أرسل رسالتك إلينا</h3>
+                    <p>سنرد عليك في غضون 24 ساعة</p>
+                </div>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">الاسم الكامل *</label>
+                        <input type="text" id="name" required>
+                        <div class="form-focus-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني *</label>
+                        <input type="email" id="email" required>
+                        <div class="form-focus-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">نوع الخدمة المطلوبة *</label>
+                        <select id="service" required>
+                            <option value="">اختر الخدمة</option>
+                            <option value="web">تطوير موقع ويب</option>
+                            <option value="design">تصميم جرافيكي</option>
+                            <option value="ai">حلول ذكاء اصطناعي</option>
+                            <option value="ecommerce">متجر إلكتروني</option>
+                            <option value="branding">هوية بصرية</option>
+                            <option value="consultation">استشارة تقنية</option>
+                        </select>
+                        <div class="form-focus-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">الميزانية المتوقعة</label>
+                        <select id="budget">
+                            <option value="">اختر الميزانية</option>
+                            <option value="500-1000">$500 - $1000</option>
+                            <option value="1000-3000">$1000 - $3000</option>
+                            <option value="3000-5000">$3000 - $5000</option>
+                            <option value="5000+">أكثر من $5000</option>
+                        </select>
+                        <div class="form-focus-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">الرسالة *</label>
+                        <textarea id="message" rows="5" required></textarea>
+                        <div class="form-focus-line"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <span>إرسال الرسالة</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <div class="footer-logo-icon">
+                    <i class="fas fa-infinity"></i>
+                </div>
+                <div class="footer-logo-text">
+                    <h3>BELMO & TARIQ</h3>
+                    <p>دمج الذكاء والجمال</p>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#hero">الرئيسية</a></li>
+                        <li><a href="#about">من نحن</a></li>
+                        <li><a href="#expertise">خبراتنا</a></li>
+                        <li><a href="#projects">مشاريعنا</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>خدماتنا</h4>
+                    <ul>
+                        <li><a href="#">تطوير الويب</a></li>
+                        <li><a href="#">التصميم الجرافيكي</a></li>
+                        <li><a href="#">الذكاء الاصطناعي</a></li>
+                        <li><a href="#">المتاجر الإلكترونية</a></li>
+                        <li><a href="#">الاستشارات التقنية</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>التقنيات</h4>
+                    <ul>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">React</a></li>
+                        <li><a href="#">Node.js</a></li>
+                        <li><a href="#">Python</a></li>
+                        <li><a href="#">AI & ML</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>اشترك في نشرتنا</h4>
+                <p>ابقَ على اطلاع بأحدث مشاريعنا وتقنياتنا</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="بريدك الإلكتروني">
+                    <button type="submit">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>&copy; 2026 BELMO & TARIQ. جميع الحقوق محفوظة.</p>
+                <p>تصميم وتطوير: محمد بلال زقايبة وطارق ناصر حزيمية</p>
+            </div>
+            <div class="footer-credits">
+                            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <!-- بعد script.js مباشرة -->
+<script src="script.js"></script>
+<script src="design-generator.js"></script>
+<!-- قسم الواقع المعزز -->
+<section class="ar-section" id="ar-experience">
+    <div class="section-header">
+        <div class="section-badge">تجربة AR</div>
+        <h2 class="section-title">تجربة الواقع المعزز</h2>
+        <p class="section-description">شاهد تصاميمنا في عالمك الحقيقي باستخدام الواقع المعزز</p>
+    </div>
+    
+    <div class="ar-container">
+        <div class="ar-viewer" id="arViewer">
+            <div class="ar-placeholder">
+                <i class="fas fa-cube"></i>
+                <p>وجه الكاميرا نحو سطح مستوٍ</p>
+            </div>
+        </div>
+        
+        <div class="ar-controls">
+            <button class="btn-ar btn-primary" id="btnStartAR">
+                <i class="fas fa-camera"></i> بدء تجربة AR
+            </button>
+            <button class="btn-ar btn-outline" id="btnChangeModel">
+                <i class="fas fa-exchange-alt"></i> تغيير النموذج
+            </button>
+            <button class="btn-ar btn-outline" id="btnCapture">
+                <i class="fas fa-camera-retro"></i> التقاط صورة
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- قسم الذكاء الاصطناعي التفاعلي -->
+<section class="ai-interactive-section" id="ai-interactive">
+    <div class="section-header">
+        <div class="section-badge">ذكاء BELMO</div>
+        <h2 class="section-title">مساعد الذكاء الاصطناعي التفاعلي</h2>
+        <p class="section-description">تحدث مع مساعدنا الذكي للحصول على نصائح وتصاميم فورية</p>
+    </div>
+    
+    <div class="ai-chat-container">
+        <div class="ai-chat-header">
+            <div class="ai-avatar">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="ai-info">
+                <h4>BELMO AI Assistant</h4>
+                <div class="ai-status">
+                    <span class="status-dot online"></span>
+                    <span>متصل الآن</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ai-chat-messages" id="aiChatMessages">
+            <div class="message ai-message">
+                <div class="message-content">
+                    <p>مرحباً! أنا مساعد BELMO الذكي. كيف يمكنني مساعدتك اليوم؟</p>
+                </div>
+                <div class="message-time">الآن</div>
+            </div>
+        </div>
+        
+        <div class="ai-chat-input">
+            <div class="quick-actions">
+                <button class="quick-action" data-action="design">🎨 اقترح تصميماً</button>
+                <button class="quick-action" data-action="code">💻 اكتب كوداً</button>
+                <button class="quick-action" data-action="color">🌈 اقترح ألواناً</button>
+                <button class="quick-action" data-action="idea">💡 أعطني فكرة</button>
+            </div>
+            
+            <div class="input-container">
+                <input type="text" id="aiInput" placeholder="اكتب رسالتك هنا...">
+                <button class="btn-send" id="btnSendAI">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+                <button class="btn-voice" id="btnVoice">
+                    <i class="fas fa-microphone"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="ai-features">
+        <div class="ai-feature">
+            <div class="feature-icon">
+                <i class="fas fa-brain"></i>
+            </div>
+            <h4>تصميم ذكي</h4>
+            <p>أنشئ تصاميم باستخدام خوارزميات الذكاء الاصطناعي</p>
+        </div>
+        <div class="ai-feature">
+            <div class="feature-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <h4>برمجة ذكية</h4>
+            <p>اكتب كوداً بمساعدة الذكاء الاصطناعي</p>
+        </div>
+        <div class="ai-feature">
+            <div class="feature-icon">
+                <i class="fas fa-palette"></i>
+            </div>
+            <h4>توليد ألوان</h4>
+            <p>أنشئ لوحات ألوان متناسقة تلقائياً</p>
+        </div>
+        <div class="ai-feature">
+            <div class="feature-icon">
+                <i class="fas fa-lightbulb"></i>
+            </div>
+            <h4>إبداع لا نهائي</h4>
+            <p>احصل على أفكار إبداعية فريدة</p>
+        </div>
+    </div>
+</section>
+
+<!-- قسم التحديات التفاعلية -->
+<section class="challenge-section" id="challenges">
+    <div class="section-header">
+        <div class="section-badge">تحديات</div>
+        <h2 class="section-title">تحديات تصميم تفاعلية</h2>
+        <p class="section-description">اختبر مهاراتك في تحديات تصميم حقيقية</p>
+    </div>
+    
+    <div class="challenges-container">
+        <div class="challenge-timer">
+            <div class="timer-circle">
+                <svg width="120" height="120">
+                    <circle cx="60" cy="60" r="54" stroke="var(--accent-color)" stroke-width="4" fill="none"></circle>
+                </svg>
+                <div class="timer-text">
+                    <span id="timerMinutes">05</span>:<span id="timerSeconds">00</span>
+                </div>
+            </div>
+            <div class="timer-controls">
+                <button class="btn-timer" id="btnStartTimer">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="btn-timer" id="btnPauseTimer">
+                    <i class="fas fa-pause"></i>
+                </button>
+                <button class="btn-timer" id="btnResetTimer">
+                    <i class="fas fa-redo"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="challenge-content">
+            <h3 id="challengeTitle">تحدي اليوم: تصميم شعار حديث</h3>
+            <p id="challengeDescription">
+                قم بتصميم شعار لشركة تكنولوجيا ناشئة خلال 5 دقائق.
+                يجب أن يعبر الشعار عن الابتكار والسرعة.
+            </p>
+            
+            <div class="challenge-tools">
+                <h4>الأدوات المتاحة:</h4>
+                <div class="tools-grid">
+                    <div class="tool" data-tool="pen">
+                        <i class="fas fa-pen"></i>
+                        <span>قلم</span>
+                    </div>
+                    <div class="tool" data-tool="shapes">
+                        <i class="fas fa-shapes"></i>
+                        <span>أشكال</span>
+                    </div>
+                    <div class="tool" data-tool="text">
+                        <i class="fas fa-font"></i>
+                        <span>نص</span>
+                    </div>
+                    <div class="tool" data-tool="gradient">
+                        <i class="fas fa-fill-drip"></i>
+                        <span>تدرج</span>
+                    </div>
+                    <div class="tool" data-tool="effects">
+                        <i class="fas fa-magic"></i>
+                        <span>تأثيرات</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="challenge-canvas-container">
+                <div class="canvas-wrapper">
+                    <canvas id="designCanvas" width="800" height="400"></canvas>
+                </div>
+                <div class="canvas-controls">
+                    <button class="btn-canvas" id="btnClearCanvas">
+                        <i class="fas fa-trash"></i> مسح
+                    </button>
+                    <button class="btn-canvas" id="btnSaveCanvas">
+                        <i class="fas fa-save"></i> حفظ
+                    </button>
+                    <button class="btn-canvas" id="btnShareCanvas">
+                        <i class="fas fa-share-alt"></i> مشاركة
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="challenge-leaderboard">
+            <h4>تصنيف المصممين</h4>
+            <div class="leaderboard-list" id="leaderboard">
+                <div class="leaderboard-item">
+                    <span class="rank">1</span>
+                    <span class="name">طارق ناصر</span>
+                    <span class="score">950</span>
+                </div>
+                <div class="leaderboard-item">
+                    <span class="rank">2</span>
+                    <span class="name">محمد بلال</span>
+                    <span class="score">920</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

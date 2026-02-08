@@ -1,0 +1,162 @@
+{
+  "team": {
+    "belmo": {
+      "name": "محمد بلال زقايبة",
+      "alias": "BELMO",
+      "title": "خبير الذكاء الاصطناعي وتطوير الويب",
+      "bio": "طالب ذكاء اصطناعي متخصص في تطوير حلول تقنية متقدمة. أمتلك معرفة عميقة في JavaScript, HTML5, CSS3, JSON وتقنيات الويب الحديثة. أعمل على VS Code وأطور أنظمة ذكية وتطبيقات ويب معقدة.",
+      "skills": {
+        "programming": ["JavaScript", "Python", "TypeScript", "Java", "C++"],
+        "frameworks": ["React", "Node.js", "TensorFlow.js", "Vue.js", "Angular"],
+        "databases": ["MongoDB", "MySQL", "Firebase", "PostgreSQL", "Redis"],
+        "tools": ["VS Code", "Git", "Docker", "Webpack", "AWS"]
+      },
+      "contact": {
+        "email": "belmo@example.com",
+        "phone": "+962 79 000 0001",
+        "location": "الأردن"
+      }
+    },
+    "tariq": {
+      "name": "طارق ناصر حزيمية",
+      "title": "مصمم جرافيكي وإبداعي محترف",
+      "bio": "مصمم جرافيكي مبدع متخصص في إنشاء هويات بصرية مميزة وتصميم تجارب مستخدم استثنائية. أمتلك مهارات متقدمة في برامج التصميم الرائدة وأقوم بتحويل المفاهيم المجردة إلى واقع مرئي جذاب.",
+      "skills": {
+        "software": ["Adobe Photoshop", "Adobe Illustrator", "Figma", "Adobe After Effects", "Blender"],
+        "designAreas": ["UI/UX Design", "Brand Identity", "Motion Graphics", "3D Modeling", "Typography"],
+        "principles": ["Color Theory", "Visual Hierarchy", "Composition", "User Psychology", "Aesthetics"],
+        "technologies": ["Responsive Design", "Prototyping", "Design Systems", "AR/VR Design", "Microinteractions"]
+      },
+      "contact": {
+        "email": "tariq@example.com",
+        "phone": "+962 79 000 0002",
+        "location": "الأردن"
+      }
+    }
+  },
+  "services": [
+    {
+      "id": 1,
+      "title": "تطوير مواقع متكاملة",
+      "description": "نقوم بتطوير مواقع ويب متكاملة وسريعة الاستجابة باستخدام أحدث التقنيات مع دمج حلول الذكاء الاصطناعي.",
+      "icon": "laptop-code",
+      "category": "web"
+    },
+    {
+      "id": 2,
+      "title": "تصميم جرافيكي وإبداعي",
+      "description": "نصمم هوية بصرية مميزة للشركات، بما في ذلك الشعارات والمواد التسويقية والتصاميم الإبداعية.",
+      "icon": "paint-brush",
+      "category": "design"
+    },
+    {
+      "id": 3,
+      "title": "حلول الذكاء الاصطناعي",
+      "description": "نطور حلول ذكاء اصطناعي متقدمة تتناسب مع احتياجات الأعمال، من أنظمة التوصية إلى تحليل البيانات.",
+      "icon": "brain",
+      "category": "ai"
+    },
+    {
+      "id": 4,
+      "title": "تصميم واجهات المستخدم",
+      "description": "نصمم واجهات مستخدم جذابة وسهلة الاستخدام لمواقع الويب والتطبيقات مع التركيز على تجربة المستخدم.",
+      "icon": "mobile-alt",
+      "category": "design"
+    },
+    {
+      "id": 5,
+      "title": "متاجر إلكترونية متكاملة",
+      "description": "نطور متاجر إلكترونية احترافية مع أنظمة دفع آمنة وإدارة محتوى سهلة، مع تحسين تجربة التسوق.",
+      "icon": "shopping-cart",
+      "category": "ecommerce"
+    },
+    {
+      "id": 6,
+      "title": "استشارات تقنية متخصصة",
+      "description": "نقدم استشارات تقنية متخصصة في مجال الذكاء الاصطناعي وتطوير الويب والتصميم الجرافيكي.",
+      "icon": "chart-line",
+      "category": "consultation"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "نظام توصيات ذكي للتجارة الإلكترونية",
+      "description": "نظام ذكاء اصطناعي يقدم توصيات منتجات مخصصة بناءً على سلوك المستخدم وتفضيلاته.",
+      "category": "ai",
+      "tech": ["Python", "TensorFlow", "React", "Node.js"],
+      "year": 2023
+    },
+    {
+      "id": 2,
+      "title": "منصة تعليمية تفاعلية",
+      "description": "منصة تعليمية متكاملة مع واجهة مستخدم جذابة ونظام إدارة محتوى متقدم.",
+      "category": "web",
+      "tech": ["JavaScript", "React", "MongoDB", "Express"],
+      "year": 2023
+    },
+    {
+      "id": 3,
+      "title": "هوية بصرية لمطعم راقي",
+      "description": "تصميم هوية بصرية متكاملة تشمل الشعار والمواد التسويقية وتصميم الموقع.",
+      "category": "design",
+      "tech": ["Adobe Illustrator", "Photoshop", "Figma"],
+      "year": 2023
+    },
+    {
+      "id": 4,
+      "title": "متجر إلكتروني متقدم",
+      "description": "متجر إلكتروني سريع الاستجابة مع نظام دفع آمن وإدارة مخزون ذكية.",
+      "category": "ecommerce",
+      "tech": ["React", "Node.js", "MongoDB", "Stripe API"],
+      "year": 2022
+    },
+    {
+      "id": 5,
+      "title": "لوحة تحليل بيانات الأعمال",
+      "description": "لوحة تحكم تفاعلية تعرض مؤشرات الأداء الرئيسية باستخدام الرسوم البيانية المتقدمة.",
+      "category": "ai",
+      "tech": ["Python", "D3.js", "React", "FastAPI"],
+      "year": 2022
+    },
+    {
+      "id": 6,
+      "title": "موقع شركة تكنولوجيا",
+      "description": "موقع شركة حديث مع تصميم جرافيكي متميز وتجربة مستخدم محسنة.",
+      "category": "web",
+      "tech": ["HTML5", "CSS3", "JavaScript", "GSAP"],
+      "year": 2022
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "أحمد محمد",
+      "company": "شركة التقنية المتقدمة",
+      "text": "عمل متميز من BELMO & TARIQ، استطاعوا تحويل فكرتنا إلى موقع ويب رائع مع تصميم جذاب.",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "سارة خالد",
+      "company": "متجر إلكتروني",
+      "text": "التصميم الإبداعي مع التطوير التقني المتقدم، هذا ما يميز هذا الفريق الرائع.",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "علي حسين",
+      "company": "شركة ناشئة",
+      "text": "نظام الذكاء الاصطناعي الذي طوروه ساعدنا في زيادة المبيعات بنسبة 40%.",
+      "rating": 5
+    }
+  ],
+  "technologies": {
+    "frontend": ["HTML5", "CSS3", "JavaScript", "React", "Vue.js", "TypeScript"],
+    "backend": ["Node.js", "Python", "Express", "FastAPI", "Django"],
+    "databases": ["MongoDB", "MySQL", "PostgreSQL", "Firebase", "Redis"],
+    "ai_ml": ["TensorFlow", "PyTorch", "Scikit-learn", "OpenCV", "NLTK"],
+    "design": ["Figma", "Adobe Photoshop", "Adobe Illustrator", "After Effects", "Blender"],
+    "tools": ["VS Code", "Git", "Docker", "Webpack", "AWS", "Figma"]
+  }
+}
